@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Faustin Hosea Federiko</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+    <!-- <header class="bg-white shadow-md fixed w-full top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold text-blue-600">Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#profile" class="nav-link hover:text-blue-600 transition-all duration-300 ease-in-out">Profile</a></li>
+                    <li><a href="#services" class="nav-link hover:text-blue-600 transition-all duration-300 ease-in-out">Services</a></li>
+                    <li><a href="#projects" class="nav-link hover:text-blue-600 transition-all duration-300 ease-in-out">Projects</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-blue-600 transition-all duration-300 ease-in-out">Contact</a></li>
+                    <li>
+                        <a href="cv.pdf" download class="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center hover:bg-blue-700 transition-all duration-300">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l5 5m0 0l5-5m-5 5V3"></path>
+                            </svg>
+                            Download CV
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+    <header id="navbar" class="bg-white shadow-md fixed w-full top-0 z-10 transition-all duration-500 ease-in-out">
+        <style>
+            /* Efek Hover pada Navigasi */
+            .nav-link {
+                position: relative;
+                color: #1E3A8A;
+                font-weight: 600;
+                transition: all 0.3s ease-in-out;
+                padding: 8px 12px;
+            }
+        
+            .nav-link::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: -4px;
+                width: 0;
+                height: 3px;
+                background: #2563EB;
+                transition: all 0.3s ease-in-out;
+                transform: translateX(-50%);
+            }
+        
+            .nav-link:hover {
+                color: #2563EB;
+                text-shadow: 0px 0px 10px rgba(37, 99, 235, 0.5);
+            }
+        
+            .nav-link:hover::after {
+                width: 100%;
+            }
+        
+            /* Efek Hover dan Animasi Shadow untuk Download CV */
+            .download-btn {
+                background: #2563EB;
+                color: white;
+                padding: 10px 16px;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px rgba(37, 99, 235, 0.3);
+                transition: all 0.3s ease-in-out;
+            }
+        
+            .download-btn:hover {
+                background: #1E40AF;
+                transform: translateY(-3px);
+                box-shadow: 0px 8px 20px rgba(30, 64, 175, 0.5);
+            }
+        
+            /* Efek Blur dan Shadow pada Navbar saat Scroll */
+            .scrolled {
+                background: rgba(255, 255, 255, 0.8);
+                backdrop-filter: blur(8px);
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+        </style>
+        
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold text-blue-600">Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#profile" class="nav-link">Profile</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <a href="cv.pdf" download class="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center hover:bg-blue-700 transition-all duration-300">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l5 5m0 0l5-5m-5 5V3"></path>
+                            </svg>
+                            Download CV
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <section id="profile" class="flex flex-col items-center text-center mt-20 py-12">
+        <img src="Assets/foto.jpg" alt="Foto Profil" class="w-60 h-60 rounded-full border-4 border-blue-600">
+        <h2 class="text-3xl font-bold mt-4">Faustin Hosea Federiko</h2>
+        <p class="text-gray-600">Siswa SMKN 8 MALANG | Web Developer</p>
+        <a href="#contact" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+            Contact Me
+        </a>
+    </section>
+
+    <section id="services" class="py-12 bg-white">
+        <div class="container mx-auto text-center ">
+            <h3 class="text-2xl font-bold text-blue-600">My Services</h3>
+            <p class="text-gray-600 mt-2">Berbagai layanan yang saya tawarkan dalam dunia pengembangan web.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 px-6 ">
+                <div class="bg-blue-100 p-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                    <h4 class="font-semibold text-lg">Web Development</h4>
+                    <p class="text-gray-600">Membangun website modern dan responsif.</p>
+                </div>
+                <div class="bg-blue-100 p-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                    <h4 class="font-semibold text-lg">UI/UX Design</h4>
+                    <p class="text-gray-600">Desain antarmuka menarik dan user-friendly.</p>
+                </div>
+                <div class="bg-blue-100 p-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                    <h4 class="font-semibold text-lg">SEO Optimization</h4>
+                    <p class="text-gray-600">Optimasi SEO agar website lebih mudah ditemukan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold text-blue-600">My Projects</h3>
+            <p class="text-gray-600 mt-2">Beberapa proyek yang telah saya kerjakan.</p>
+
+            <div class="mt-4">
+                <button class="filter-btn bg-blue-600 text-white px-4 py-2 mx-2 rounded-lg" data-filter="all">All</button>
+                <button class="filter-btn bg-gray-300 px-4 py-2 mx-2 rounded-lg" data-filter="web">Web</button>
+                <button class="filter-btn bg-gray-300 px-4 py-2 mx-2 rounded-lg" data-filter="design">Design</button>
+                <button class="filter-btn bg-gray-300 px-4 py-2 mx-2 rounded-lg" data-filter="data">Data</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 px-6">
+                <div class="project-box bg-white p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105" data-category="web">
+                    <img src="project1.jpg" alt="Project 1" class="rounded-lg">
+                    <h4 class="font-semibold mt-2">Project Website</h4>
+                    <p class="text-gray-600">Website landing page modern.</p>
+                    <a href="https://github.com/KokoMode60HZ/website-carrousell" target="_blank" class="mt-2 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                        Lihat di GitHub
+                    </a>
+                </div>
+                <div class="project-box bg-white p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105" data-category="design">
+                    <img src="project2.jpg" alt="Project 2" class="rounded-lg">
+                    <h4 class="font-semibold mt-2">Graphic Design</h4>
+                    <p class="text-gray-600">Desain UI/UX untuk aplikasi.</p>
+                    <a href="https://github.com/username/project2" target="_blank" class="mt-2 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                        Lihat di GitHub
+                    </a>
+                </div>
+                <div class="project-box bg-white p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105" data-category="design">
+                    <img src="project2.jpg" alt="Project 2" class="rounded-lg">
+                    <h4 class="font-semibold mt-2">Graphic Design</h4>
+                    <p class="text-gray-600">Desain UI/UX untuk aplikasi.</p>
+                    <a href="https://github.com/username/project2" target="_blank" class="mt-2 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                        Lihat di GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold text-blue-600">Berkemampuan Berbahasa</h3>
+            <div class="flex justify-center space-x-6 mt-4">
+                <img src="Assets/html.png" alt="HTML" class="w-12 h-12">
+                <img src="Assets/css.png" alt="CSS" class="w-12 h-12">
+                <img src="Assets/js.png" alt="JavaScript" class="w-12 h-12">
+                <img src="Assets/java.png" alt="Java" class="w-12 h-12">
+                <img src="Assets/phyton.png" alt="Python" class="w-12 h-12">
+                <img src="Assets/reactjs.png" alt="ReactJS" class="w-12 h-12">
+            </div>
+    
+            <h3 class="text-2xl font-bold text-blue-600 mt-8">Tools yang Digunakan</h3>
+            <div class="flex justify-center space-x-6 mt-4">
+                <img src="Assets/reactjs.png" alt="VS Code" class="w-12 h-12">
+                <img src="Assets/figma.png" alt="Figma" class="w-12 h-12">
+                <img src="Assets/chatgpt.png" alt="ChatGPT" class="w-12 h-12">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="py-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold text-blue-600">Let's Connect</h3>
+            <p class="text-gray-600 mt-2">Hubungi saya melalui email di bawah ini:</p>
+
+            <form class="mt-6 flex justify-center">
+                <input type="email" placeholder="Masukkan Email" class="border p-2 rounded-l-lg w-64">
+                <button class="bg-blue-600 text-white px-4 rounded-r-lg hover:bg-blue-700">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-blue-600 text-white text-center py-4">
+        <div class="flex justify-center space-x-6">
+            <a href="https://instagram.com/piekkooo" target="_blank">
+                <img src="Assets/instagram.png" alt="Instagram" class="w-8 h-8">
+            </a>
+            <a href="https://github.com/KokoMode60HZ" target="_blank">
+                <img src="Assets/github.png" alt="GitHub" class="w-8 h-8">
+            </a>
+            <a href="mailto:faustinhosea12@gmail.com">
+                <img src="Assets/mail.png" alt="Gmail" class="w-8 h-8">
+            </a>
+            <a href="tel:+628561090208">
+                <img src="Assets/wa.png" alt="Telepon" class="w-8 h-8">
+            </a>
+        </div>
+        <p class="mt-4">© 2025 Faustin Hosea Federiko | All rights reserved.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
